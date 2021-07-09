@@ -1,0 +1,16 @@
+.btn-outline {
+    @apply border-2 border-main-orange rounded-xl px-4 py-2 text-main-orange hover:bg-main-orange-decoration hover:text-main-white hover:border-opacity-0 hover:shadow-sm;
+}
+
+.btn-main {
+    @apply border-2 border-main-orange bg-main-orange text-main-white rounded-xl py-2 px-4 hover:shadow-sm;
+}
+
+.text-bebas-heading {
+    font-family: 'Bebas Neue', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 92px;
+    line-height: 110px;
+    letter-spacing: 0.05em;
+}

@@ -1,12 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import './styles.output.css';
+import AppRoute from './component/routes';
 import reportWebVitals from './reportWebVitals';
+// import "tailwindcss/tailwind.css";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <AppRoute />
   </React.StrictMode>,
   document.getElementById('root')
 );
