@@ -29,9 +29,12 @@
     "prebuild": "NODE_ENV=production run-s build:tailwind",
     "start": "npm-run-all build:tailwind --parallel watch:tailwind start:react",
     "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "homepage": "https://yusrilfirza.github.io/",
   "eslintConfig": {
     "extends": [
       "react-app",
