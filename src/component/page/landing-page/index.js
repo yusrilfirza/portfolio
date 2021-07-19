@@ -4,18 +4,20 @@ export const LandingPage = () => {
     return (
         <div>
             <div className="flex">
-                <div className="ml-20 mt-28 z-10 absolute">
-                    <span className="text-main-orange text-2xl font-semibold ml-4">Hi, my name is</span>
-                    <div className="flex pt-2">
-                        <span className="ml-2 text-6xl flex text-main-grey text-bebas-heading">
-                            <div className=" h-auto w-4 mt-1 mb-3 mr-2 bg-main-orange" />
+                <div className="md:ml-20 mt-28 z-10 w-full md:w-2/3 lg:w-1/2 absolute p-4 md:p-0">
+                    <span className="text-main-orange text-2xl font-semibold ml-2 md:ml-4">Hi, my name is</span>
+                    <div className="flex md:pt-2 justify-center md:justify-start">
+                        <span className="md:ml-2 text-6xl flex text-main-grey text-bebas-heading">
+                            <div className=" h-auto w-4 mt-1 mb-3 mr-2 bg-main-orange hidden md:block" />
                             <span>
                                 YUSRIL FIRZA
                             </span>
                         </span>
                     </div>
-                    <span className="text-6xl ml-8 text-main-grey text-bebas-heading">FRONT-END DEVELOPER</span>
-                    <div className="mt-4">
+                    <div className="w-full flex justify-end md:justify-start">
+                        <span className="text-base md:text-6xl ml-8 text-main-grey text-bebas-heading">FRONT-END DEVELOPER</span>
+                    </div>
+                    <div className="mt-4 w-full flex justify-center md:justify-start md:pl-8">
                         <button className="btn-outline mr-4">
                             Contact me
                         </button>
@@ -25,9 +27,9 @@ export const LandingPage = () => {
                     </div>
                 </div>
                 <div className="w-full relative justify-end flex z-0 overflow-hidden">
-                    <div className="w-1/2">
+                    <div className="w-full lg:w-1/2">
                         <div className="relative">
-                            <img alt="profile" className="profile-image absolute z-20 ml-auto right-0 top-0 bg-gradient-to-b from-current to-transparent" src={`${process.env.PUBLIC_URL}/assets/img/profile_image.png`} />
+                            <img alt="profile" className="profile-image absolute z-20 ml-auto right-0 top-0 invisible lg:visible" src={`${process.env.PUBLIC_URL}/assets/img/profile_image.png`} />
                             <div className="landing-page-bg absolute z-10 mr-0" />
                             <svg className="ml-auto" width="554" height="863" viewBox="0 0 594 803" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M666 288C666 407.846 569.07 505 449.5 505C329.93 505 233 407.846 233 288C233 168.154 329.93 71 449.5 71C569.07 71 666 168.154 666 288Z" fill="#D72A2A" fill-opacity="0.5"/>
