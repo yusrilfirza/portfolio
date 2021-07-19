@@ -27,7 +27,7 @@ export const LandingPage = () => {
                 <div className="w-full relative justify-end flex z-0 overflow-hidden">
                     <div className="w-1/2">
                         <div className="relative">
-                            <img alt="profile" className="profile-image absolute z-20 ml-auto right-0" src={`${process.env.PUBLIC_URL}/assets/img/profile_image.png`} />
+                            <img alt="profile" className="profile-image absolute z-20 ml-auto right-0 top-0 bg-gradient-to-b from-current to-transparent" src={`${process.env.PUBLIC_URL}/assets/img/profile_image.png`} />
                             <div className="landing-page-bg absolute z-10 mr-0" />
                             <svg className="ml-auto" width="554" height="863" viewBox="0 0 594 803" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M666 288C666 407.846 569.07 505 449.5 505C329.93 505 233 407.846 233 288C233 168.154 329.93 71 449.5 71C569.07 71 666 168.154 666 288Z" fill="#D72A2A" fill-opacity="0.5"/>

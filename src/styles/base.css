@@ -15,4 +15,5 @@
     height: 850px;
     left: 911px;
     top: 67px;
+    background-image: linear-gradient('to bottom', current-color, transparent);
 }
