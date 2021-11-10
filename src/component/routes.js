@@ -4,15 +4,14 @@ import { ModalSwitch } from 'react-router-modal-gallery';
 import { Route, BrowserRouter } from 'react-router-dom';
 
 import { store } from '../services/stores';
-import { LayoutHeader } from '../component/Layout/header'
 import { LayoutBase } from '../component/Layout/base';
 
 import { LandingPage } from '../component/page/landing-page';
+import { PageNotFound } from '../component/page/not-found';
 
 export const AppRoute = () => {
     const renderWithLayout = (Comp, props) => (
         <div>
-            <LayoutHeader />
             <LayoutBase>
                 <div className="z-0">
                     <Comp {...props} />
@@ -27,6 +26,7 @@ export const AppRoute = () => {
                 <>
                     <ModalSwitch>
                         <Route exact path="/" render={(props) => renderWithLayout(LandingPage, props)} />
+                        <Route render={(props) => renderWithLayout(PageNotFound, props)} title="404 Not Found" />
                     </ModalSwitch>
                 </>
             </BrowserRouter>

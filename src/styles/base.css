@@ -1,13 +1,5 @@
 .landing-page-bg {
-    /* Frame 6 */
-
-    width: 666px;
-    height: 803px;
-    background: rgba(255, 255, 255, 0.02);
-    backdrop-filter: blur(40px);
-    /* Note: backdrop-filter has minimal browser support */
-    border-radius: 61px;
-    right: 0;
+    @apply bg-main-white;
 }
 
 .profile-image {

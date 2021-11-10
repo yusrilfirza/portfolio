@@ -21,6 +21,18 @@ module.exports = {
                 soft: '#C4C4C4',
                 hard: '#888888',
             },
+            purple: {
+                DEFAULT: '#9D60BA',
+            },
+            soft_black: {
+                DEFAULT: '#383838',
+            },
+            dark_gray: {
+                DEFAULT: '#4D4D4D',
+            },
+            soft_gray: {
+                DEFAULT: '#D4D4D4',
+            },
             black: {
                 DEFAULT: '#000000',
             },
