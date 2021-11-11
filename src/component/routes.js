@@ -8,6 +8,7 @@ import { LayoutBase } from '../component/Layout/base';
 
 import { LandingPage } from '../component/page/landing-page';
 import { PageNotFound } from '../component/page/not-found';
+import { PageUnderConstruction } from '../component/page/under-construction';
 
 export const AppRoute = () => {
     const renderWithLayout = (Comp, props) => (
@@ -26,6 +27,8 @@ export const AppRoute = () => {
                 <>
                     <ModalSwitch>
                         <Route exact path="/" render={(props) => renderWithLayout(LandingPage, props)} />
+                        <Route exact path="/profile" render={(props) => renderWithLayout(PageUnderConstruction, props)} />
+                        <Route exact path="/work" render={(props) => renderWithLayout(PageUnderConstruction, props)} />
                         <Route render={(props) => renderWithLayout(PageNotFound, props)} title="404 Not Found" />
                     </ModalSwitch>
                 </>
