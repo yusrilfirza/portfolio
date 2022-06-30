@@ -1,8 +1,0 @@
-@import './styles/index.css';
-@import './styles/App.css';
-@import './styles/form.css';
-@import './styles/base.css';
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
